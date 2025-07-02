@@ -361,26 +361,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
     vulkan.adreno \
-    libAlacSwDec \
-    libApeSwDec \
     libC2D2 \
     libCB \
-    libFlacSwDec \
-    libMpeg4SwEncoder \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAlacDecSw \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxApeDecSw \
-    libOmxEvrcDec \
-    libOmxG711Dec \
-    libOmxQcelp13Dec \
-    libOmxSwVdec \
-    libOmxSwVencMpeg4 \
-    libOmxVpp \
-    libOmxWmaDec \
     libOpenCL \
     libadreno_utils \
     libadsp_default_listener \
@@ -422,7 +404,6 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker_stub \
     libsdsprpc \
     libssccalapi \
-    libswvdec \
     libsysmon_cdsp_skel \
     libthermalclient \
     libvppclient \
@@ -430,7 +411,7 @@ PRODUCT_PACKAGES += \
     libvpphvx \
     libvpplibrary \
     vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.fm@1.0 \
+    vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
@@ -439,8 +420,18 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.msmnile \
     vendor.qti.hardware.audiohalext@1.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    libOmxAacDec \
+    libOmxAlacDec \
+    libOmxAmrDec \
+    libOmxAmrwbplusDec \
+    libOmxApeDec \
     libOmxDsdDec \
+    libOmxEvrcDec \
+    libOmxG711Dec \
+    libOmxQcelp13Dec \
     libOmxVideoDSMode \
+    libOmxVpp \
+    libOmxWmaDec \
     liba2dpoffload \
     libacdb-fts \
     libacdbloader \
@@ -470,7 +461,6 @@ PRODUCT_PACKAGES += \
     libsmwrapper \
     libsurround_3mic_proc \
     libasphere \
-    libmisoundfx \
     libqcbassboost \
     libqcreverb \
     libqcvirt \
@@ -544,14 +534,14 @@ PRODUCT_PACKAGES += \
     com.xiaomi.node.mifragment \
     com.xiaomi.node.misegment \
     libdepthmapwrapper \
-    com.qualcomm.qti.dpm.api@1.0 \
-    com.qualcomm.qti.imscmservice@2.0 \
-    com.qualcomm.qti.imscmservice@2.1 \
-    com.qualcomm.qti.imscmservice@2.2 \
-    com.qualcomm.qti.uceservice@2.0 \
-    com.qualcomm.qti.uceservice@2.1 \
-    com.qualcomm.qti.uceservice@2.2 \
-    com.qualcomm.qti.uceservice@2.3 \
+    com.qualcomm.qti.dpm.api@1.0_vendor \
+    com.qualcomm.qti.imscmservice@2.0_vendor \
+    com.qualcomm.qti.imscmservice@2.1_vendor \
+    com.qualcomm.qti.imscmservice@2.2_vendor \
+    com.qualcomm.qti.uceservice@2.0_vendor \
+    com.qualcomm.qti.uceservice@2.1_vendor \
+    com.qualcomm.qti.uceservice@2.2_vendor \
+    com.qualcomm.qti.uceservice@2.3_vendor \
     deviceInfoServiceModule \
     android.hardware.bluetooth@1.0-impl-qti \
     camera.qcom \
@@ -686,7 +676,7 @@ PRODUCT_PACKAGES += \
     libmibokeh_855 \
     libminkdescriptor \
     libminksocket \
-    libmmosal \
+    libmmosal_vendor \
     libmpbase \
     libnetmgr \
     libnetmgr_common \
@@ -799,16 +789,16 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
-    vendor.qti.hardware.data.cne.internal.api@1.0 \
-    vendor.qti.hardware.data.cne.internal.constants@1.0 \
-    vendor.qti.hardware.data.cne.internal.server@1.0 \
-    vendor.qti.hardware.data.connection@1.0 \
-    vendor.qti.hardware.data.connection@1.1 \
-    vendor.qti.hardware.data.dynamicdds@1.0 \
-    vendor.qti.hardware.data.iwlan@1.0 \
+    vendor.qti.hardware.data.cne.internal.api@1.0_vendor \
+    vendor.qti.hardware.data.cne.internal.constants@1.0_vendor \
+    vendor.qti.hardware.data.cne.internal.server@1.0_vendor \
+    vendor.qti.hardware.data.connection@1.0_vendor \
+    vendor.qti.hardware.data.connection@1.1_vendor \
+    vendor.qti.hardware.data.dynamicdds@1.0_vendor \
+    vendor.qti.hardware.data.iwlan@1.0_vendor \
     vendor.qti.hardware.data.latency@1.0 \
     vendor.qti.hardware.data.lce@1.0 \
-    vendor.qti.hardware.data.qmi@1.0 \
+    vendor.qti.hardware.data.qmi@1.0_vendor \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qccvndhal@1.0-halimpl \
@@ -850,21 +840,20 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.scve.panorama@1.0 \
     vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.tui_comm@1.0 \
-    vendor.qti.ims.callcapability@1.0 \
-    vendor.qti.ims.callinfo@1.0 \
-    vendor.qti.ims.factory@1.0 \
-    vendor.qti.ims.factory@1.1 \
-    vendor.qti.ims.rcsconfig@1.0 \
-    vendor.qti.ims.rcsconfig@1.1 \
-    vendor.qti.ims.rcsconfig@2.0 \
-    vendor.qti.ims.rcsconfig@2.1 \
+    vendor.qti.ims.callcapability@1.0_vendor \
+    vendor.qti.ims.callinfo@1.0_vendor \
+    vendor.qti.ims.factory@1.0_vendor \
+    vendor.qti.ims.factory@1.1_vendor \
+    vendor.qti.ims.rcsconfig@1.0_vendor \
+    vendor.qti.ims.rcsconfig@1.1_vendor \
+    vendor.qti.ims.rcsconfig@2.0_vendor \
+    vendor.qti.ims.rcsconfig@2.1_vendor \
     vendor.qti.imsrtpservice@3.0-service-Impl \
-    vendor.qti.imsrtpservice@3.0 \
+    vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
     vendor.xiaomi.hardware.citsensorservice@1.0 \
     vendor.xiaomi.hardware.citsensorservice@1.1 \
-    vendor.xiaomi.hardware.fx.tunnel@1.0 \
     capi_v2_aptX_CLHDAD_Encoder \
     capi_v2_aptX_Classic \
     capi_v2_aptX_HD \
